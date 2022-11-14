@@ -1,17 +1,17 @@
 package org.example;
 
 public class Book {
-
     private String _title;
     private String _author;
     private String _publisher;
-    private String _copyright;
+    private String _iSBMNumber;
+    private int _copyRight;
 
-    //This will initialize our values whatever we will supply into the constructor
-    public Book(String title, String author, String publisher, String copyRight) {
+    public Book (String title, String author, String publisher, String iSBMNumber, int copyRight) {
         this._title = title;
-        _author = author;
+        this._author = author;
         this._publisher = publisher;
-        _copyright = copyRight;
+        this._iSBMNumber = iSBMNumber;
+        this._copyRight = copyRight;
     }
 }
