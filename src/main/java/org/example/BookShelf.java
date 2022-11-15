@@ -35,6 +35,8 @@ public class BookShelf {
         System.out.println("\nSorting by Author: ");
         myBookCollection.sortByAuthorASC();
         System.out.println("\nSorting by CopyRight Date: ");
-        myBookCollection.sortyByCopyRightDES();
+        myBookCollection.sortByCopyRightDES();
+
+        myBookCollection.searchBook(book2);
     }
 }

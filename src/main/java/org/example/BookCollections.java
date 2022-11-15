@@ -24,6 +24,10 @@ public class BookCollections {
     public void removeBook(Book book) {
         bookList.remove(book);
     }
+
+    public void searchBook(Book thisBook) {
+        System.out.format("\nYour searched book results: %s", thisBook.toString());
+    }
     public void printAllBooksInfo() {
         for (Book b: bookList) {
             System.out.format("\n***************\n%s", b.toString());
@@ -40,7 +44,7 @@ public class BookCollections {
         printAllBooksInfo();
     }
 
-    public void sortyByCopyRightDES() {
+    public void sortByCopyRightDES() {
         Collections.sort(bookList, Book.BookCopyRightComparator);
         printAllBooksInfo();
     }
