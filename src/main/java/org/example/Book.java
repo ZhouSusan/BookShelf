@@ -52,4 +52,10 @@ package org.example;
      public int getCopyRight() {
         return _copyRight;
      }
+
+     //Displays book detail 
+     public String toString() {
+        String bookDetail = String.format("Title: %s \nAuthor: %s \nPublisher: %s", _title, _author, _publisher);
+        return bookDetail;
+     }
 }
