@@ -11,6 +11,8 @@ public class BookShelf {
                 "575-478-42", 1985);
         Book book4 = new Book("Gothic", "Gina Kylie", "Gothic Publishing House",
                 "888-444-77", 2005);
+        Book book5 = new Book("Test", "Test Tester", "Testing Publishing House",
+                "111-111-11", 1111);
         System.out.println(book1.toString());
         System.out.println("*********************");
         book1.setTitle("Jurassic Park");
@@ -23,11 +25,13 @@ public class BookShelf {
         myBookCollection.addBook(book2);
         myBookCollection.addBook(book3);
         myBookCollection.addBook(book4);
+        myBookCollection.addBook(book5);
 
         myBookCollection.printAllBooksInfo();
 
         System.out.println("\nSorting by Title: ");
         myBookCollection.sortByNameASC();
+        myBookCollection.removeBook(book5);
         System.out.println("\nSorting by Author: ");
         myBookCollection.sortByAuthorASC();
         System.out.println("\nSorting by CopyRight Date: ");

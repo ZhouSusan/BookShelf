@@ -21,6 +21,9 @@ public class BookCollections {
         bookList.add(book);
     }
 
+    public void removeBook(Book book) {
+        bookList.remove(book);
+    }
     public void printAllBooksInfo() {
         for (Book b: bookList) {
             System.out.format("\n***************\n%s", b.toString());
