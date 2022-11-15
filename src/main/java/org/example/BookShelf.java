@@ -13,6 +13,8 @@ public class BookShelf {
                 "888-444-77", 2005);
         Book book5 = new Book("Test", "Test Tester", "Testing Publishing House",
                 "111-111-11", 1111);
+
+        System.out.println("Printing initial entries \n");
         System.out.println(book1.toString());
         System.out.println("*********************");
         book1.setTitle("Jurassic Park");
@@ -26,15 +28,15 @@ public class BookShelf {
         myBookCollection.addBook(book3);
         myBookCollection.addBook(book4);
         myBookCollection.addBook(book5);
-
+        System.out.println("\nPrinting all added books");
         myBookCollection.printAllBooksInfo();
 
-        System.out.println("\nSorting by Title: ");
+        System.out.println("\n\nSorting by Title: ");
         myBookCollection.sortByNameASC();
         myBookCollection.removeBook(book5);
-        System.out.println("\nSorting by Author: ");
+        System.out.println("\n\nSorting by Author: ");
         myBookCollection.sortByAuthorASC();
-        System.out.println("\nSorting by CopyRight Date: ");
+        System.out.println("\n\nSorting by CopyRight Date: ");
         myBookCollection.sortyByCopyRightDES();
     }
 }
