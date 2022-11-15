@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Comparator;
 
  class Book {
     private String _title;
@@ -58,4 +59,31 @@ package org.example;
         String bookDetail = String.format("Title: %s \nAuthor: %s \nPublisher: %s", _title, _author, _publisher);
         return bookDetail;
      }
+
+     public static Comparator<Book> BookNameComparator = new Comparator<Book>() {
+         public int compare(Book b1, Book b2) {
+             String bookTitle1 = b1.getTitle().toUpperCase();
+             String bookTitle2 = b2.getTitle().toUpperCase();
+
+             return bookTitle1.compareTo(bookTitle2);
+         }
+     };
+
+    public static Comparator<Book> BookAuthorComparator = new Comparator<Book>() {
+        public int compare(Book author1, Book author2) {
+            String authorName1 = author1.getTitle().toLowerCase();
+            String authorName2 = author2.getAuthor().toLowerCase();
+
+            return authorName1.compareTo(authorName2);
+        }
+    };
+
+    public static Comparator<Book> BookCopyRightComparator = new Comparator<Book>() {
+        public int compare(Book b1, Book b2) {
+            int copyRight1 = b1.getCopyRight();
+            int copyRight2 = b2.getCopyRight();
+
+            return copyRight2 - copyRight1;
+        }
+    };
 }

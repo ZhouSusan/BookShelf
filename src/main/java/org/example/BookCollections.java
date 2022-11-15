@@ -1,6 +1,5 @@
 package org.example;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class BookCollections {
     private Book _book;
@@ -26,5 +25,20 @@ public class BookCollections {
         for (Book b: bookList) {
             System.out.format("\n***************\n%s", b.toString());
         }
+    }
+
+    public void sortByNameASC() {
+        Collections.sort(bookList, Book.BookNameComparator);
+        printAllBooksInfo();
+    }
+
+    public void sortByAuthorASC() {
+        Collections.sort(bookList, Book.BookAuthorComparator);
+        printAllBooksInfo();
+    }
+
+    public void sortyByCopyRightDES() {
+        Collections.sort(bookList, Book.BookCopyRightComparator);
+        printAllBooksInfo();
     }
 }

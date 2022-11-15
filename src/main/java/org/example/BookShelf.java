@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Collections;
 
 //BookShelf contains the main method which will be our driver class
 public class BookShelf {
@@ -9,18 +10,28 @@ public class BookShelf {
                 "555-777-99", 1992);
         Book book3 = new Book("Star Wars", "Luke Skyler", "May the Force be with you Publishing House",
                 "575-478-42", 1985);
-//        System.out.println(book.toString());
-//        System.out.println("*********************");
-//        book.setTitle("Jurassic Park");
-//        book.setAuthor("Fred Tutorial");
-//        book.setCopyRight(1970);
-//        System.out.println(book.toString());
+        Book book4 = new Book("Gothic", "Gina Kylie", "Gothic Publishing House",
+                "888-444-77", 2005);
+        System.out.println(book1.toString());
+        System.out.println("*********************");
+        book1.setTitle("Jurassic Park");
+        book1.setAuthor("Fred Tutorial");
+        book1.setCopyRight(1970);
+        System.out.println(book1.toString());
 
         BookCollections myBookCollection = new BookCollections();
         myBookCollection.addBook(book1);
         myBookCollection.addBook(book2);
         myBookCollection.addBook(book3);
+        myBookCollection.addBook(book4);
 
         myBookCollection.printAllBooksInfo();
+
+        System.out.println("\nSorting by Title: ");
+        myBookCollection.sortByNameASC();
+        System.out.println("\nSorting by Author: ");
+        myBookCollection.sortByAuthorASC();
+        System.out.println("\nSorting by CopyRight Date: ");
+        myBookCollection.sortyByCopyRightDES();
     }
 }
