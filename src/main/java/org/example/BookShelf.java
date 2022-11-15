@@ -29,12 +29,12 @@ public class BookShelf {
 
         myBookCollection.printAllBooksInfo();
 
-        System.out.println("\nSorting by Title: ");
+        System.out.println("\n\nSorting by Title: ");
         myBookCollection.sortByNameASC();
         myBookCollection.removeBook(book5);
-        System.out.println("\nSorting by Author: ");
+        System.out.println("\n\nSorting by Author: ");
         myBookCollection.sortByAuthorASC();
-        System.out.println("\nSorting by CopyRight Date: ");
+        System.out.println("\n\nSorting by CopyRight Date: ");
         myBookCollection.sortByCopyRightDES();
 
         myBookCollection.searchBook(book2);

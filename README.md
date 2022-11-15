@@ -9,12 +9,16 @@ Bookshelf can sort any books created by Author, Title, or Copyright year.
 
 <hr/>
 
-![Adding Books](./src/main/resources/images/bookshelf-sorting-by-author.png)
+![Sorting by Author](./src/main/resources/images/bookshelf-sorting-by-author.png)
 
 <hr/>
 
-![Adding Books](./src/main/resources/images/bookshelf-sorting-by-title.png)
+![Sorting by Title](./src/main/resources/images/bookshelf-sorting-by-title.png)
 
 <hr/>
 
-![Adding Books](./src/main/resources/images/bookshelf-sorting-by-copyright.png)
+![Sorting by Copyrights](./src/main/resources/images/bookshelf-sorting-by-copyright.png)
+
+<hr/>
+
+![Searching by Title](./src/main/resources/images/bookshelf-search-by-title.png)
