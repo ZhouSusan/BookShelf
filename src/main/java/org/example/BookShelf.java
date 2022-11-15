@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Collections;
 
 //BookShelf contains the main method which will be our driver class
 public class BookShelf {
