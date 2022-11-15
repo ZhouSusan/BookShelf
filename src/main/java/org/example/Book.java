@@ -53,7 +53,7 @@ package org.example;
         return _copyRight;
      }
 
-     //Displays book detail 
+     //Displays book detail
      public String toString() {
         String bookDetail = String.format("Title: %s \nAuthor: %s \nPublisher: %s", _title, _author, _publisher);
         return bookDetail;
